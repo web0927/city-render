@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 375 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span><i class="iconfont icon-angle-left"></i></span>
+            <img src="./img/ban.png" alt="">
+            <span><i class="iconfont icon-didian"></i></span>
+            <canvas id="canvas" width="100" height='100'>
+            </canvas>
+        </header>
+        <div class="section">
+            <p><b>北京首都国际机场</b> <span>查看1992条评论</span></p>
+            <div class="img"><img src="./img/n.png" alt=""></div>
+            <h5></h5>
+            <div class="listle">
+                <b>预定</b>
+                <span>预订成功后100%有房</span>
+            </div>
+            <dl>
+                <dt>自主大床</dt>
+                <dd>
+                    <p><span>不含早 部分有窗</span></p>
+                    <div class="botton">
+                            <p><span>入住18点曼菲</span></p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                    <dt>自主大床</dt>
+                    <dd>
+                        <p><span>不含早 部分有窗</span></p>
+                        <div class="botton">
+                                <p><span>入住18点曼菲</span></p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                        <dt>自主大床</dt>
+                        <dd>
+                            <p><span>不含早 部分有窗</span></p>
+                            <div class="botton">
+                                    <p><span>入住18点曼菲</span></p>
+                            </div>
+                        </dd>
+                    </dl>
+                    
+    </div>
+    <script src="./js/jquery-2.1.1.js"></script>
+    <script src="./js/swiper-4.1.6.min.js"></script>
+    <script src="./js/bscroll.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        var canvas =  document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var deg = Math.PI / 180;
+        
+        
+        ctx.translate(50,50);
+        ctx.beginPath();
+        ctx.arc(0, 0, 25, -90, Math.PI *1);
+        ctx.fillStyle = '#fff'
+        ctx.lineWidth = 5;
+        ctx.fill();
+        ctx.closePath();
+       
+        ctx.beginPath();
+        ctx.arc(0, 0, 25, -90 * deg, 260 * deg);
+        ctx.strokeStyle = 'orange';
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.font = '14px normal';
+        ctx.fillStyle = 'orange';
+        ctx.fillText('4.3分', -15, 5);
+        ctx.fill();
+        ctx.closePath();
+
+        // ctx.requestAnimationFrameStart
+        
+    </script>
+</body>
+</html>
