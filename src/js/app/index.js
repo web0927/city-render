@@ -1,11 +1,10 @@
-require(['jquery', 'swiper', 'bscroll', 'handlebars', 'render', 'upLoading'], function ($, swiper, bscroll, handlebars, render, upLoading) {
+require(['jquery', 'swiper', 'bscroll', 'handlebars', 'render', 'upLoading', 'getRequest'], function ($, swiper, bscroll, handlebars, render, upLoading, getRequest) {
     var str = '';
         var local = window.localStorage;
         var mySwiper = new swiper('.cont', {
             loop:true,
             pagination:{
-                el:".swiper-pagination",
-                type:'progressbar'
+                el:".swiper-pagination"
             },
             autoplay:{
                 delay:1000

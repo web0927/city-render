@@ -7,7 +7,8 @@ require.config({
         'handlebars':'./libs/handlebars',
         'index':'./app/index',
         'render':'./app/render',
-        'upLoading':'./app/upLoading'
+        'upLoading':'./app/upLoading',
+        'getRequest':'./app/getRequest'
         
     }
 })
